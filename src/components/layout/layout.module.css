@@ -1,0 +1,7 @@
+.Content{
+    width: 70%;
+    margin: 0 auto;
+}
+.Content > div{
+    padding: 1rem;
+}

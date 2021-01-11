@@ -1,0 +1,68 @@
+.Card{
+    margin: 1rem 0;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: content-box;
+    text-decoration: none;
+    color: black;
+}
+
+.Flex{
+    display: flex;
+}
+
+.Image{
+    width: 75%;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.Image img{
+    width: auto;
+    height: 400px;
+}
+
+.Purchase{
+    width: 25%;
+}
+.Price{
+    font-size: xx-large;
+}
+
+.Product{
+    width: 80%;
+}
+
+.Reference{
+    width: 20%;
+}
+.Description{
+    text-align: start;
+}
+
+.Columns{
+    column-count: 2;
+}
+
+.Btn{
+    background-color: #3483fa;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 48px;
+    padding: 0 24px;
+    height: 48px;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-transition: .18s ease-out;
+    transition: .18s ease-out;
+    -webkit-transition-property: background,color;
+    transition-property: background,color;
+    -webkit-font-smoothing: antialiased
+}
+.Btn:hover{
+    background-color: rgb(17, 17, 146);
+    color: lightgray;
+}

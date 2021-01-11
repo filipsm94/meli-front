@@ -1,0 +1,43 @@
+.Card{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: content-box;
+    text-decoration: none;
+    color: black;
+}
+
+.Image{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2px;
+    width: 15%;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.Image img{
+    width: 150px;
+    height: 200px;
+}
+
+.Detail{
+    width: 85%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.Price{
+    font-size: xx-large;
+}
+
+.Product{
+    width: 80%;
+}
+
+.Reference{
+    width: 20%;
+}
