@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './navbar-search.module.css';
+import classes from './navbar-search.module.scss';
 import { BsSearch } from 'react-icons/bs';
 import Box from '../../../hoc/fake';
 import { useHistory } from 'react-router-dom';

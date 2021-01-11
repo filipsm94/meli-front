@@ -1,7 +1,7 @@
 import React from 'react'
 import CurrencyFormat from 'react-currency-format';
 import { Link, useRouteMatch } from 'react-router-dom';
-import classes from './item.module.css';
+import classes from './item.module.scss';
 
 const Item = (props) => {
     const currency = ` ${props.currency}`;
@@ -12,7 +12,7 @@ const Item = (props) => {
             pathname:`${match.url}/${props.idProduct}`
         }}>
             <div className={classes.Image}>
-                <img src={props.urlImg} />
+                <img src={props.urlImg} alt={props.title} />
             </div>
             <div className={classes.Detail}>
                 <div className={classes.Product}>

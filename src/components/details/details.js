@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import CurrencyFormat from 'react-currency-format';
-import classes from './details.module.css';
+import classes from './details.module.scss';
 import Box from '../../hoc/fake';
 import Spinner from '../spinner/spinner';
 
@@ -29,7 +29,7 @@ const DetailsPage = () => {
             <div className={classes.Card}>
                 <div className={classes.Flex}>
                     <div className={classes.Image}>
-                        <img src={product.picture} />
+                        <img src={product.picture} alt={product.title} />
                         <div className={classes.Description}>
                             <h1>Descripcion del Producto</h1>
                             <p>{product.description}</p>

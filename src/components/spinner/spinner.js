@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './spinner.module.css';
+import classes from './spinner.module.scss';
 
 const Spinner = (props) => (
     <div className={classes.Loader}>
