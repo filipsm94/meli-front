@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/logo__mercado_libre.png';
-import NavbarSearch from '../navbar/navbar-search';
+import logo from '../../assets/logo__mercado_libre.png';
+import NavbarSearch from '../Navbar';
 import classes from './header.module.scss';
 
 const Header = (props) =>{

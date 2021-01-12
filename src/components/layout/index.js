@@ -1,18 +1,17 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import Box from '../../hoc/fake';
-import Header from '../home/header/header';
+import Header from '../Header';
 import classes from './layout.module.scss';
 
 const Layout = (props) =>{
 
     return (
-        <Box>
+        <>
             <Header></Header>
             <div className={classes.Content}>
                 {props.children}
             </div>
-        </Box>
+        </>
     )
 }
 

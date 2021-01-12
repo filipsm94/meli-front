@@ -1,8 +1,7 @@
 import React from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { useHistory } from 'react-router-dom';
-import Box from '../../../hoc/fake';
-import classes from './navbar-search.module.scss';
+import classes from './navbar.module.scss';
 
 const NavbarSearch = (props) => {
     let history = useHistory();
@@ -24,7 +23,7 @@ const NavbarSearch = (props) => {
     }
     
     return (
-        <Box>
+        <>
             <form className={classes.Form} noValidate>
                 <input 
                     className={classes.Input} placeholder="Nunca dejes de buscar"
@@ -34,7 +33,7 @@ const NavbarSearch = (props) => {
                     <BsSearch size="20" />
                 </button>
             </form>
-        </Box>
+        </>
     )
 }
 
