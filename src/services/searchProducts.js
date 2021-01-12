@@ -6,7 +6,7 @@ export const searchProductByText = (query) => {
         const {categories, items}  = response.data; 
         return {categories, items};
     }).catch((error) => {
-        console.error('Hubo un problema con la petición Fetch:' + error.message);
+        console.error('Hubo un problema con la petición searchProductByText:' + error.message);
         throw error;
     });
 }
@@ -16,7 +16,7 @@ export const searchProductById = (id) =>{
         const {item} = response.data;
         return {item};
     }).catch((error) => {
-        console.error('Hubo un problema con la petición Fetch:' + error.message);
+        console.error('Hubo un problema con la petición searchProductById:' + error.message);
         throw error;
     })
 }
