@@ -14,7 +14,6 @@ const DetailsPage = () => {
     useEffect(()=>{
         setLoading(true);
         axios.get(`http://localhost:4000/api/items/${id}`).then((response) => {
-            console.log(response);
             setProduct(response.data.item);
         }).catch((error) => {
             console.error('Hubo un problema con la petición Fetch:' + error.message);
