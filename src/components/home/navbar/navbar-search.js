@@ -1,8 +1,8 @@
 import React from 'react';
-import classes from './navbar-search.module.scss';
 import { BsSearch } from 'react-icons/bs';
-import Box from '../../../hoc/fake';
 import { useHistory } from 'react-router-dom';
+import Box from '../../../hoc/fake';
+import classes from './navbar-search.module.scss';
 
 const NavbarSearch = (props) => {
     let history = useHistory();

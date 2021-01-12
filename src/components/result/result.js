@@ -1,10 +1,10 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { withRouter } from 'react-router-dom';
-import axios from 'axios'
-import Item from './item/item';
-import Breadcrumbs from './breadcrumbs/breadcrumbs';
-import Spinner from '../spinner/spinner';
 import Box from '../../hoc/fake';
+import Spinner from '../spinner/spinner';
+import Breadcrumbs from './breadcrumbs/breadcrumbs';
+import Item from './item/item';
 
 const ResultPage = (props) =>{
     const query = new URLSearchParams(props.location.search).get("search");
@@ -21,7 +21,6 @@ const ResultPage = (props) =>{
             console.error('Hubo un problema con la petición Fetch:' + error.message);
         }).finally(() => setLoading(false));
     },[query])
-
 
     return (
     <div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import CurrencyFormat from 'react-currency-format';
 import { Link, useRouteMatch } from 'react-router-dom';
 import classes from './item.module.scss';

@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import CurrencyFormat from 'react-currency-format';
-import classes from './details.module.scss';
+import { useParams } from 'react-router-dom';
 import Box from '../../hoc/fake';
 import Spinner from '../spinner/spinner';
+import classes from './details.module.scss';
 
 const DetailsPage = () => {
     let { id } = useParams();
     const [product, setProduct] = useState({})
     const [loading, setLoading] = useState(false);
-    
+
     useEffect(()=>{
         setLoading(true);
         axios.get(`http://localhost:4000/api/items/${id}`).then((response) => {
