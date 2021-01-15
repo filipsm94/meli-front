@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Breadcrumbs = (props) => {
+const Breadcrumbs = ({categories}) => {
 
     return (
         <p>
-            {props.categories.reduce((prevVal,currVal,ix)=> {
-                return (ix+1) !== props.categories.length ? `${prevVal}${currVal} > `:`${prevVal}${currVal}`;
+            {categories.reduce((prevVal,currVal,ix)=> {
+                return (ix+1) !== categories.length ? `${prevVal}${currVal} > `:`${prevVal}${currVal}`;
             }, '')}
         </p>
     )

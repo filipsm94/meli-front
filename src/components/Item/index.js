@@ -3,13 +3,13 @@ import CurrencyFormat from 'react-currency-format';
 import { Link, useRouteMatch } from 'react-router-dom';
 import classes from './item.module.scss';
 
-const Item = (props) => {
+const Item = ({ currency, idProduct, urlImg, amount, title }) => {
     const currency = ` ${props.currency}`;
     let match = useRouteMatch();
 
     return (
         <Link className={classes.Card} to={{
-            pathname:`${match.url}/${props.idProduct}`
+            pathname: `${match.url}/${props.idProduct}`
         }}>
             <div className={classes.Image}>
                 <img src={props.urlImg} alt={props.title} />

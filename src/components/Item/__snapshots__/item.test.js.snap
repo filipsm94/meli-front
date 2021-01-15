@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Component renders 1`] = `
+<div>
+  <a
+    class="Card"
+    data-testid="link"
+    to="[object Object]"
+  >
+    <div
+      class="Image"
+    >
+      <img
+        alt="hola"
+        src="url"
+      />
+    </div>
+    <div
+      class="Detail"
+    >
+      <div
+        class="Product"
+      >
+        <span
+          class="Price"
+        >
+          $ 1,000 COP
+        </span>
+        <h3>
+          hola
+        </h3>
+      </div>
+      <div
+        class="Reference"
+      >
+        address
+      </div>
+    </div>
+  </a>
+</div>
+`;
